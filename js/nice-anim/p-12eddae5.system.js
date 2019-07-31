@@ -1,0 +1,1 @@
+System.register(["./p-d3bc8692.system.js"],function(){"use strict";var e,t;return{setters:[function(n){e=n.p;t=n.b}],execute:function(){e().then(function(e){return t([["p-lapfeo9k.system",[[4,"nice-anim",{direction:[1],delay:[2],duration:[2],animationDistance:[1,"animation-distance"],triggerDistance:[1,"trigger-distance"]}]]]],{resourcesUrl:e})})}}});

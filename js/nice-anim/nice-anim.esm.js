@@ -1,0 +1,1 @@
+import{p as i,b as a}from"./p-3632de84.js";i().then(i=>a([["p-fxw9o9mo",[[4,"nice-anim",{direction:[1],delay:[2],duration:[2],animationDistance:[1,"animation-distance"],triggerDistance:[1,"trigger-distance"]}]]]],{resourcesUrl:i}));
