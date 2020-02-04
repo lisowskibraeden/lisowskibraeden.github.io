@@ -17,6 +17,15 @@
     <title>Braeden Lisowski</title>
 </head>
 
+<style>
+    body{
+        /* background-image: url(images/background.svg); */
+        background-color: #336699;
+        background-size: 10% 10%;
+        
+    }
+</style>
+
 <body>
     <div class="container p-3">
         <div class="row d-flex justify-content-center">
@@ -25,23 +34,23 @@
                     <img class="rounded-circle" src="/images/me.jpeg" alt="Me">
                 </div>
             </nice-anim>
-            <div class="col-sm d-flex flex-column justify-content-between">
+            <div class="col-sm d-flex flex-column justify-content-between" style = "background-color: #336699;">
                 <nice-anim direction="down" animation-distance="33%">
                     <div class="py-2">
                         <h1 class="text-center">Braeden Lisowski</h1>
-                        <p class="text-center" style="line-height:75%;font-size:11pt">Computer Science student at UW-Madison</p>
-                        <p class="text-center" style="line-height:1pt;font-size:10pt">2018-2022</p>
+                        <p class="text-center" style="line-height:75%;font-size:11pt;">Computer Science student at UW-Madison</p>
+                        <p class="text-center" style="line-height:1pt;font-size:10pt;">2018-2022</p>
                     </div>
                 </nice-anim>
                 <nice-anim direction="left" delay="200" animation-distance="10%">
-                    <div class="px-5" style="line-height:1.5">
+                    <div class="px-5" style="line-height:1.5; background-color: #336699;">
                         <p class="text-center" style="font-size:14pt">I have loved computers from a young age and love learning new skills whenever I can. </p>
                         <p class="text-center" style="font-size:14pt">Recently I have been working at the Department of Corrections-Wisconsin developing tools using Java,
-                            Springboot, and JPA. I have also been working on a few GitHub projects. </p>
+                            Springboot, and JPA. I have also been working on a few GitHub projects using C++ and Golang. I am currently in Intro to Operating Systems and Intro to Artificial Intelligence class. </p>
                     </div>
                 </nice-anim> 
                 <nice-anim animation-distance="0%" delay="400" duration="1000">
-                    <div class="d-flex justify-content-center p-3">
+                    <div class="d-flex justify-content-center p-3" style="background-color:#336699">
                         <a class="text-center p-2" href="https://github.com/lisowskibraeden" rel="noopener" target="_blank">
                             <i class="fab fa-github fa-4x"></i>
                         </a>
@@ -57,21 +66,39 @@
                     <div class="d-flex justify-content-center text-center">
                         <div class="flex-column d-flex align-items-center p-3">
                             <b>Programming Languages</b>
-                            <span>Java (4 years)</span>
-                            <span>C/C++ (1 year)</span>
-                            <span>Golang (1 year)</span>
+                            <span>Java</span>
+                            <span>C/C++</span>
+                            <span>Golang</span>
                         </div>
                         <div class="flex-column d-flex align-items-center p-3">
                             <b>Other Skills</b>
                             <span>Git</span>
                             <span>Spring Framework</span>
                             <span>REST API</span>
+                            <span>Linux</span>
                         </div>
                     </div>
-                </nice-anim>
+                </nice-anim>   
             </div>
+            
         </div>
     </div>
+    <nice-anim>
+        <div class="container-fluid text-center">
+            <h1>Projects I am involved with</h1>
+            <div class="d-flex justify-content-between p-3">
+                <div class="col-5">
+                    <img src="images/where-to-live.JPG" class="img-fluid" alt="picture of Where to Live project">
+                </div>
+                <div class="col-sm">
+                    <h4>Where to Live</h4>
+                    <p>This is a website created to compile weather data across the United States and determine 'nice days' and 'bad days'. Using this it determines where the nicest places are to live in the United States. This project was inspired by Kelly Norton's "Pleasant Places", but with the addition of bad days and different tools to present the data.</p>
+                    <p>This was created using Golang to parse all of the data from NOAA. The data processing of multipile gigabytes runs in under 5 minutes. The frontend uses HTML5 Canvas and Stencil.js to present the data.</p>
+                    <a href="nick.winans.codes/where-to-live">Here is a link to the website</a> and <a href="https://github.com/Nicell/where-to-live">here is a link to the Github repository.</a>
+                </div>
+            </div>
+        </div>
+    </nice-anim>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
