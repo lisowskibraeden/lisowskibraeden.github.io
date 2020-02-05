@@ -95,20 +95,22 @@
             
         </div>
     </div>
-    <nice-anim>
+    <nice-anim delay="1000" duration="1500">
         <div class="container-fluid text-center">
             <h1>Projects I am involved with</h1>
-            <div class="d-flex justify-content-between p-3">
-                <div class="col-5">
-                    <img src="images/where-to-live.JPG" class="img-fluid lazy" alt="picture of Where to Live project">
+            <nice-anim direction="right" delay="1000" duration="1000">
+                <div class="d-flex justify-content-between p-3">
+                        <div class="col-5">
+                            <img src="images/where-to-live.JPG" class="img-fluid lazy" alt="picture of Where to Live project">
+                        </div>
+                    <div class="col-sm">
+                        <h4 style="color: white">Where to Live</h4>
+                        <p>This is a website created to compile weather data across the United States and determine 'nice days' and 'bad days'. Using this it determines where the nicest places are to live in the United States. This project was inspired by Kelly Norton's "Pleasant Places", but with the addition of bad days and different tools to present the data.</p>
+                        <p>This was created using Golang to parse all of the data from NOAA. The data processing of multiple gigabytes runs in under 5 minutes. The frontend uses HTML5 Canvas and Stencil.js to present the data.</p>
+                        <a href="https://nick.winans.codes/where-to-live" rel="noopener" target="_blank" style="color: cyan;">Here is a link to the website</a><a style="color: white;"> and </a><a href="https://github.com/Nicell/where-to-live" rel="noopener" target="_blank" style="color: cyan;">here is a link to the Github repository</a></a>
+                    </div>
                 </div>
-                <div class="col-sm" style="background-color: ;">
-                    <h4 style="color: white">Where to Live</h4>
-                    <p>This is a website created to compile weather data across the United States and determine 'nice days' and 'bad days'. Using this it determines where the nicest places are to live in the United States. This project was inspired by Kelly Norton's "Pleasant Places", but with the addition of bad days and different tools to present the data.</p>
-                    <p>This was created using Golang to parse all of the data from NOAA. The data processing of multiple gigabytes runs in under 5 minutes. The frontend uses HTML5 Canvas and Stencil.js to present the data.</p>
-                    <a href="https://nick.winans.codes/where-to-live" rel="noopener" target="_blank" style="color: cyan;">Here is a link to the website</a><a style="color: white;"> and </a><a href="https://github.com/Nicell/where-to-live" rel="noopener" target="_blank" style="color: cyan;">here is a link to the Github repository</a></a>
-                </div>
-            </div>
+            </nice-anim>
         </div>
     </nice-anim>
     <!-- Optional JavaScript -->
