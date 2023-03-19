@@ -6,8 +6,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://polyfill.io/v2/polyfill.min.js?features=IntersectionObserver"></script>
     <script type="module" src="js/nice-anim/nice-anim.esm.js"></script>
     <script nomodule="" src="js/nice-anim/nice-anim.js"></script>
@@ -18,127 +18,249 @@
 </head>
 
 <style>
-    body{
-        /* background-image: url(images/background.svg); */
-        background-color: #336699;
-        background-size: 10% 10%;
-        
+    body {
+        background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='29' height='50.115' patternTransform='scale(2) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(210, 50%, 40%, 1)'/><path d='M14.498 16.858L0 8.488.002-8.257l14.5-8.374L29-8.26l-.002 16.745zm0 50.06L0 58.548l.002-16.745 14.5-8.373L29 41.8l-.002 16.744zM28.996 41.8l-14.498-8.37.002-16.744L29 8.312l14.498 8.37-.002 16.745zm-29 0l-14.498-8.37.002-16.744L0 8.312l14.498 8.37-.002 16.745z'  stroke-width='3' stroke='hsla(160, 26%, 53%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(-14,-36.46)' fill='url(%23a)'/></svg>")        /* height: 4000px; */
     }
-    p{
+
+    p {
         color: white
     }
-    span{
+
+    h1 {
         color: white
     }
-    h1{
-        color: white
+
+    h4 {
+        color: white;
     }
-    b{
-        color: white
+
+    @media screen and (min-width: 800px) {
+        .header {
+            width: 60vw;
+            border-radius: 25px;
+            box-shadow: 0 0 10px 1px black;
+            padding-left: 15px
+        }
+
+        .projects {
+            width: 80vw;
+            border-radius: 25px;
+            box-shadow: 0 0 10px 1px black;
+        }
+    }
+
+    .header {
+        background: #051014;
+        margin: 0 auto;
+    }
+
+    .skill {
+        border-radius: 5px;
+        border-color: white;
+        background-color: white;
+        box-shadow: 0 0 7px 1px white;
+        margin: 0 auto;
+        color: black;
+    }
+
+    .projects {
+        padding-top: 1rem;
+        padding-bottom: 0.5rem;
+        background-color: #051014;
+        margin: 5rem auto;
+    }
+
+    .picture{
+        border-radius: 25px;
+        background-color: white;
+        box-shadow: 0 0 10px 1px white;
+        padding: 1rem;
+    }
+    
+    .text {
+        border-radius: 25px;
+        background-color: #68A691;
+        box-shadow: 0 0 10px 1px #68A691;
+        padding: 1rem;
+        margin-bottom: 2rem
+    }
+
+    .link {
+        color: #336699;
     }
 </style>
 
 <body>
-    <div class="container p-3">
-        <div class="row d-flex justify-content-center">
-            <nice-anim direction="right" animation-distance="50%" delay="500" duration="1000">
-                <div>
-                    <img class="rounded-circle" src="/images/me.jpg" alt="Me">
-                </div>
-            </nice-anim>
-            <div class="col-sm d-flex flex-column justify-content-between"">
-                <nice-anim direction="down" animation-distance="33%">
-                    <div class="py-2">
-                        <h1 class="text-center">Braeden Lisowski</h1>
-                        <p class="text-center" style="line-height:75%;font-size:11pt;">Computer Science student at UW-Madison</p>
-                        <p class="text-center" style="line-height:1pt;font-size:10pt;">2018-2021</p>
+    <div class="header">
+        <div class="p-3 pr-6 row mt-3">
+            <div class="col-4 justify-content-center">
+                <nice-anim direction="right" animation-distance="50%" delay="500" duration="1000">
+                    <div>
+                        <img class="rounded-circle" src="/images/me.jpg" alt="Me">
                     </div>
                 </nice-anim>
-                <nice-anim direction="left" delay="200" animation-distance="10%">
-                    <div class="px-5" style="line-height:1.5;">
-                        <p class="text-center" style="font-size:14pt;color:white">I have loved computers from a young age and love learning new skills whenever I can. </p>
-                        <p class="text-center" style="font-size:14pt;">Recently I have been working at Artful Home developing tools using Java,
-                            Springboot, and JPA. I have also been working on a few different projects in C#, Python, among other things. </p>
-                    </div>
-                </nice-anim> 
-                <nice-anim animation-distance="0%" delay="400" duration="1000">
-                    <div class="d-flex justify-content-center p-3">
-                        <a class="text-center p-2" href="https://github.com/lisowskibraeden" rel="noopener" target="_blank" style="color:cyan;">
-                            <i class="fab fa-github fa-4x"></i>
-                        </a>
-                        <a class="text-center p-2" href="mailto:lisowskibraeden@gmail.com" rel="noopener" target="_blank" style="color:cyan;">
-                            <i class="fas fa-envelope-open-text fa-4x"></i>
-                        </a>
-                        <a class="text-center p-2" href="https://www.linkedin.com/in/braeden-lisowski/" rel="noopener" target="_blank" style="color:cyan;">
-                            <i class="fab fa-linkedin fa-4x"></i>
-                        </a>
-                    </div>
-                </nice-anim>
-                <nice-anim direction="down" delay="100">
-                    <div class="d-flex justify-content-center text-center">
-                        <div class="flex-column d-flex align-items-center p-3">
-                            <b>Programming Languages</b>
-                            <span>JavaScript/TypeScript</span>
-                            <span>Java</span>
-                            <span>C/C++</span>
-                            <span>Golang</span>
-                            <span>Javascript</span>
-                            <span>SQL (Oracle)</span>
-                            <span>Python</span>
-                        </div>
-                        <div class="flex-column d-flex align-items-center p-3">
-                            <b>Other Skills</b>
-                            <span>Git</span>
-                            <span>Spring Framework</span>
-                            <span>REST API</span>
-                            <span>Linux</span>
-                            <span>Docker</span>
-                            <span>DevOps</span>
-                        </div>
-                    </div>
-                </nice-anim>   
             </div>
-            
+            <div class="col justify-content-center" style="padding-right: 2rem;">
+                <div class="row">
+                    <div class="col-sm d-flex flex-column justify-content-between"">
+                        <div class=" py-2">
+                        <h1 class="text-center">Braeden Lisowski</h1>
+                        <p class="text-center" style="line-height:75%;font-size:11pt;">Software Engineer</p>
+                    </div>
+                    <nice-anim direction="left" delay="200" animation-distance="10%">
+                        <div class="px-5" style="line-height:1.5;">
+                            <p class="text-center" style="font-size:14pt;">I have loved computers from a
+                                young age and love learning new skills whenever I can. </p>
+                            <p class="text-center" style="font-size:14pt;">Recently I have been working at Artful
+                                Home where I work on the main site as well as the internal tools. I am also working
+                                on a few different projects in C, Python, among other things. One ongoing project is an automatic puncher for my music player.</p>
+                        </div>
+                    </nice-anim>
+                    <nice-anim animation-distance="0%" delay="400" duration="1000">
+                        <div class="d-flex justify-content-center p-3 ">
+                            <a class="text-center p-2 link" href="https://github.com/lisowskibraeden" rel="noopener"
+                                target="_blank">
+                                <i class="fab fa-github fa-4x"></i>
+                            </a>
+                            <a class="text-center p-2 link" href="mailto:lisowskibraeden@gmail.com" rel="noopener"
+                                target="_blank">
+                                <i class="fas fa-envelope-open-text fa-4x"></i>
+                            </a>
+                            <a class="text-center p-2 link" href="https://www.linkedin.com/in/braeden-lisowski/"
+                                rel="noopener" target="_blank">
+                                <i class="fab fa-linkedin fa-4x"></i>
+                            </a>
+                        </div>
+                    </nice-anim>
+                    </nice-anim>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <nice-anim direction="down" delay="100">
+                        <div class="d-flex justify-content-center text-center">
+                            <div class="flex-column d-flex align-items-center p-3 m-2 skill">
+                                <b>Programming Languages</b>
+                                <span>JavaScript/TypeScript</span>
+                                <span>HTML/CSS</span>
+                                <span>Java</span>
+                                <span>C</span>
+                                <span>Golang</span>
+                                <span>Javascript</span>
+                                <span>SQL (Oracle)</span>
+                                <span>Python</span>
+                            </div>
+                            <div class="flex-column d-flex align-items-center p-3 m-2 skill">
+                                <b>Frameworks</b>
+                                <span>Arduino</span>
+                                <span>Spring Boot</span>
+                                <span>Hibernate/ORM</span>
+                                <span>Raspberry Pi</span>
+                                <span>Angular</span>
+                                <span>jQuery</span>
+                            </div>
+                            <div class="flex-column d-flex align-items-center p-3 m-2 skill">
+                                <b>Other Skills</b>
+                                <span>Git</span>
+                                <span>GitLab Actions</span>
+                                <span>Github</span>
+                                <span>REST API</span>
+                                <span>Linux</span>
+                                <span>Docker</span>
+                                <span>DevOps</span>
+                            </div>
+                        </div>
+                    </nice-anim>
+                </div>
+
+            </div>
         </div>
     </div>
-    <nice-anim delay="1000" duration="1500">
-        <div class="container-fluid text-center">
-            <h1>Projects I Worked on</h1>
-            <nice-anim direction="right" delay="1000" duration="1000">
-                <div class="d-flex justify-content-between p-3">
-                        <div class="col-5">
-                            <img src="images/where-to-live.JPG" class="img-fluid lazy" alt="picture of Where to Live project">
+    </div>
+    <div class="projects">
+        <nice-anim delay="1000" duration="1500">
+            <div class="container-fluid text-center">
+                <h1 style="padding-bottom: 1rem;">Projects I Worked on</h1>
+                <!-- <nice-anim direction="left" delay="1000" duration="1000">
+                    <div class="d-flex justify-content-between p-3 text">
+                        <div class="col-sm">
+                            <h4>Electronic Music Box</h4>
+                                <p>I created a music box with a brushless DC motor to run the music paper tape through
+                                    the
+                                    music player. I decided to create this to learn basic electronics.</p>
+                                <p>I used an arduino to read potentiometers to determine the speed of the motor as well
+                                    as
+                                    switches to turn the motor on and to turn the display on. This information is then
+                                    displayed on the segment display.</p>
+                                <a href="https://nick.winans.io/where-to-live/" rel="noopener" target="_blank"
+                                    style="color: cyan;">Here is a slideshow displaying more angles</a> and <a
+                                    href="https://github.com/Nicell/where-to-live" rel="noopener" target="_blank"
+                                    style="color: cyan;">here is a link to a YouTube video of
+                                    the box playing</a></a>
                         </div>
-                    <div class="col-sm">
-                        <h4 style="color: white">Where to Live</h4>
-                        <p>This is a website created to compile weather data across the United States and determine 'nice days' and 'bad days'. Using this it determines where the nicest places are to live in the United States. This project was inspired by Kelly Norton's "Pleasant Places", but with the addition of bad days and different tools to present the data.</p>
-                        <p>This was created using Golang to parse all of the data from NOAA. The data processing of multiple gigabytes runs in under 5 minutes. The frontend uses HTML5 Canvas and Stencil.js to present the data.</p>
-                        <a href="https://nick.winans.codes/where-to-live" rel="noopener" target="_blank" style="color: cyan;">Here is a link to the website</a><a style="color: white;"> and </a><a href="https://github.com/Nicell/where-to-live" rel="noopener" target="_blank" style="color: cyan;">here is a link to the Github repository</a></a>
+                        <div class="col-5 picture">
+                            <img src="images/where-to-live.JPG" class="img-fluid lazy"
+                                alt="picture of Where to Live project">
+                        </div>
                     </div>
-                </div>
-            </nice-anim>
-            <nice-anim direction="left" delay="1000" duration="1000">
-                <div class="d-flex justify-content-between p-3">
-                    <div class="col-sm">
-                        <h4 style="color: white">Badger Pokedex</h4>
-                        <p>This website was created for the <a href="https://badgerhacks.github.io/" rel="noopener" target="_blank" style="color: cyan;">Badgerhacks hackathon</a>. It is an online pokedex that allows the user to search for a Pokemon and see the stats and evolution associated with that pokemon</p>
-                        <p>This was created using Next.js to present the frontend and a backend using GraphQL written in Golalng.</p>
-                        <a href="https://badger-pokedex-git-master-lisowskibraeden.vercel.app/" rel="noopener" target="_blank" style="color: cyan;">Here is a link to the website</a><a style="color: white;"> and </a><a href="https://github.com/lisowskibraeden/badger-pokedex" rel="noopener" target="_blank" style="color: cyan;">here is a link to the Github repository</a></a>
-                    </div>    
-                    <div class="col-5">
-                            <img src="images/badger-dex.PNG" class="img-fluid lazy" alt="picture of Where to Live project">
+                </nice-anim> -->
+                <nice-anim direction="right" delay="1000" duration="1000">
+                    <div class="d-flex justify-content-between p-3 text">
+                        <div class="col-5">
+                            <img src="images/where-to-live.JPG" class="img-fluid lazy picture"
+                                alt="picture of Where to Live project">
                         </div>
-                </div>
-            </nice-anim>
-        </div>
-    </nice-anim>
+                        <div class="col-sm">
+                            <h4>Where to Live</h4>
+                            <p>This is a website created to compile weather data across the United States and determine
+                                'nice days' and 'bad days'. Using this it determines where the nicest places are to live
+                                in the United States. This project was inspired by Kelly Norton's "Pleasant Places", but
+                                with the addition of bad days and different tools to present the data.</p>
+                            <p>This was created using Golang to parse all of the data from NOAA. The data processing of
+                                multiple gigabytes runs in under 5 minutes. The frontend uses HTML5 Canvas and
+                                Stencil.js to present the data.</p>
+                            <a href="https://nick.winans.io/where-to-live/" rel="noopener" target="_blank"
+                                style="color: cyan;">Here is a link to the website</a><a> and
+                            </a><a href="https://github.com/Nicell/where-to-live" rel="noopener" target="_blank"
+                                style="color: cyan;">here is a link to the Github repository</a></a>
+                        </div>
+                    </div>
+                </nice-anim>
+                <nice-anim direction="left" delay="1000" duration="1000">
+                    <div class="d-flex justify-content-between p-3 text">
+                        <div class="col-sm">
+                            <h4>Badger Pokedex</h4>
+                            <p>This website was created for the <a href="https://badgerhacks.github.io/" rel="noopener"
+                                    target="_blank" style="color: cyan;">Badgerhacks hackathon</a>. It is an online
+                                pokedex that allows the user to search for a Pokemon and see the stats and evolution
+                                associated with that pokemon</p>
+                            <p>This was created using Next.js to present the frontend and a backend using GraphQL
+                                written in Golalng.</p>
+                            <a href="https://badger-pokedex-git-master-lisowskibraeden.vercel.app/" rel="noopener"
+                                target="_blank" style="color: cyan;">Here is a link to the website</a><a> and </a><a
+                                href="https://github.com/lisowskibraeden/badger-pokedex" rel="noopener" target="_blank"
+                                style="color: #00ffff;">here is a link to the Github repository</a></a>
+                        </div>
+                        <div class="col-5 picture">
+                            <img src="images/badger-dex.PNG" class="img-fluid lazy"
+                                alt="picture of Where to Live project">
+                        </div>
+                    </div>
+                </nice-anim>
+            </div>
+        </nice-anim>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 </body>
 
